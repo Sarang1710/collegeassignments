@@ -1,0 +1,5 @@
+.completed {
+    color:rgb(212, 140, 103);
+    text-shadow: 2px 1px 20px;
+    text-decoration: line-through;
+}

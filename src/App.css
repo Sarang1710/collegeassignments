@@ -1,0 +1,17 @@
+
+
+.table {
+  padding: 0px;
+}
+
+.title{
+    font-weight:bold;
+    text-align: center;
+}
+.item {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.ofstick{
+    color: red;
+}

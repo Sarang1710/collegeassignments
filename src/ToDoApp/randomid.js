@@ -1,0 +1,2 @@
+const rand_id = ()=>{}
+

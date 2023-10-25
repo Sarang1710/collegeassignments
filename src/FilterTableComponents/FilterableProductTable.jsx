@@ -6,7 +6,6 @@ const FilterableProductTable = () => {
     let [search, setSearch] = useState("");
     let [inStock, setInStock] = useState(false);
 
-    // console.log(inStock);
     const hancelCallback = (data)=>{
         setSearch(search = data);
     }
@@ -15,9 +14,11 @@ const FilterableProductTable = () => {
     }
     return (
         <>
+        <div className="text-center">
             <SearchBoxComponent pcall = {hancelCallback} incheck = {handleInStock}/>
             <br />
             <ProductTable search = {search} ischeck = {inStock}/>
+        </div>
         </>
     )
 }

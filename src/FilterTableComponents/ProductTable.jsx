@@ -31,11 +31,11 @@ const ProductTable = (props) => {
     };
     return (
         <>
-            <table >
+            <table className="center">
                 <thead>
                     <tr>
                         <th>
-                            Name
+                            Name &nbsp; &nbsp;
                         </th>
                         <th>
                             Price

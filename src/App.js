@@ -1,25 +1,26 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.css';
-// import FilterableProductTable from './Components/FilterableProductTable';
-// import FilterableTable from './FruitComponent/FilterableTable';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import TodoReduxExample from './ToDoRedux/Component/TodoRedux';
-// import ToDoApp from './ToDoApp/ToDoApp';
-// import ToDoApp from './ToDoApp_R/ToDoApp';
-const App = ()=>{
+import { NavLink, Outlet } from 'react-router-dom';
+
+const App = () => {
   return (
-    <div className='container'>
-    <div className='row'>
-      <div className='col-5'>
-    {/* <FilterableProductTable/> */}
-    {/* <ToDoApp/> */}
-    {/* <FilterableTable/> */}
-    <TodoReduxExample/>
+    <>
+      <div className='container mt-5 text-center mx-auto'>
+        <div className='row'>
+          <div className='col-md-12 '>
+            <NavLink to="/" className="btn btn-primary mx-2">SetCounterComponent</NavLink>
+            <NavLink to="/filtertablecomponent" className="btn btn-primary mx-2">FilterableProductTable</NavLink>
+            <NavLink to="/todo" className="btn btn-primary mx-2">ToDoApp</NavLink>
+            <NavLink to="/todousereducer" className="btn btn-primary mx-2">ToDoApp useReducer</NavLink>
+            <NavLink to="/todoredux" className="btn btn-primary">ToDoApp Redux</NavLink>
+          </div>
+          <div className='col-md-12 mt-5'>
+            <Outlet />
+          </div>
+        </div>
       </div>
-      </div>
-    </div>
-    
+
+    </>
   );
 }
 

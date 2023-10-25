@@ -29,7 +29,7 @@ const ToDoApp = ()=>{
         <>
         <h1>ToDoApp</h1>
         <Add addTask = {handleCallback} />
-        <table>
+        <table className="todoItem">
             <thead>
                 <tr>
                     <th>Id</th>

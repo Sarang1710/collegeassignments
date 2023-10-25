@@ -1,2 +1,0 @@
-const rand_id = ()=>{}
-
